@@ -495,6 +495,10 @@ class AccessTokenRequest(message.AccessTokenRequest):
             "urn:ietf:params:oauth:client-assertion-type:jwt-bearer"],
     }
 
+class ROPCAccessTokenRequest(message.ROPCAccessTokenRequest):
+    c_param = message.ROPCAccessTokenRequest.c_param.copy()
+    c_default = {"grant_type": "password"}
+
 
 class AddressClaim(Message):
     c_param = {"formatted": SINGLE_OPTIONAL_STRING,
