@@ -56,7 +56,7 @@ HTTP_ARGS = ["headers", "redirections", "connection_type"]
 REQUEST2ENDPOINT = {
     "AuthorizationRequest": "authorization_endpoint",
     "AccessTokenRequest": "token_endpoint",
-    # ROPCAccessTokenRequest: "authorization_endpoint",
+    "ROPCAccessTokenRequest": "token_endpoint",
     # CCAccessTokenRequest: "authorization_endpoint",
     "RefreshAccessTokenRequest": "token_endpoint",
     "TokenRevocationRequest": "token_endpoint"}
